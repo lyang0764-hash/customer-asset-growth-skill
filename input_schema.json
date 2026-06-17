@@ -1,0 +1,15 @@
+{
+  "customer_name": "",
+  "company": "",
+  "country": "",
+  "industry": "",
+  "customer_type": "",
+  "website": "",
+  "past_orders": [],
+  "past_inquiries": [],
+  "last_contact_date": "",
+  "last_purchase_date": "",
+  "customer_signals": [],
+  "seller_products": [],
+  "task_type": ""
+}
