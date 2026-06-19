@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Customer Asset Growth Skill Input",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "entity_id": {
+      "type": "string",
+      "description": "Unique ID for the customer, lead, account, contact, or entity."
+    },
+    "entity_type": {
+      "type": "string",
+      "description": "Generic entity type such as customer, lead, account, user, member, partner, prospect, or unknown."
+    },
+    "relationship_status": {
+      "type": "string",
+      "description": "Current relationship status if known."
+    },
+    "interaction_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "context_signals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "available_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "task_goal": {
+      "type": "string"
+    },
+    "desired_output_format": {
+      "type": "string",
+      "enum": [
+        "markdown",
+        "json",
+        "both"
+      ]
+    }
+  },
+  "required": [
+    "task_goal"
+  ]
+}

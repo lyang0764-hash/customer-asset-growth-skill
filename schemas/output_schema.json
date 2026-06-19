@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Customer Asset Growth Skill Output",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "entity_status": {
+      "type": "string"
+    },
+    "evidence_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_missing": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "motivation_signals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "opportunity_type": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "priority_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "recommended_action": {
+      "type": "string"
+    },
+    "communication_angle": {
+      "type": "string"
+    },
+    "suggested_cta": {
+      "type": "string"
+    },
+    "optional_message_draft": {
+      "type": "string"
+    },
+    "internal_note": {
+      "type": "string"
+    },
+    "risk_warning": {
+      "type": "string"
+    },
+    "human_review_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "entity_status",
+    "evidence_used",
+    "evidence_missing",
+    "motivation_signals",
+    "opportunity_type",
+    "priority_score",
+    "confidence",
+    "recommended_action",
+    "communication_angle",
+    "suggested_cta",
+    "risk_warning",
+    "human_review_required"
+  ]
+}
